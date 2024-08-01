@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #003049;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #003049;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #003049;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img style="height: 300px; width: 150;" src="5.png">  
+</div>
+
+<div class="topnav">
+  <a href="#acadamic">Academic</a>
+  <a href="#capability">Capability</a>
+  <a href="#subscription">Subscriptions</a>
+  <a href="#partners">Partners</a>
+  <a href="#media">Follow us</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card" id="academic">
+      <h2>Academic Arena
+ 
+      </h2>
+      <h5>August 2 2024</h5>
+      <div>
+        <img style="height:200px; width: 500px;" src="eskerepap.jpg" alt="">
+      </div>
+      <p>Our Goals</p>
+      <p style="font-style: oblique;">Our main purpose is to provide quality education to students in Ethiopia.
+        we will provide several cources ranging from ABC;s to calculus.We provide a free trial for 1 month but after that there will 
+        be payment of 20 ETB per month to 100 ETB per month based on the package that you want to buy.
+      </p>
+    </div>
+    <div class="card" id="capability">
+      <h2>What we can do </h2>
+      <h5>Capabilities</h5>
+      <iframe src="https://scratch.mit.edu/projects/1049641838/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+      <h3 style="font-style: oblique;">This is just a quater of we can do using the simplest coding platform</h3>
+      <p style="font-size: 20;">We, with the help from our Partners, can provide you or your childern better education than any other website there is.
+    When you register yourself or others into this arean you will see them wear the helmet of knowledge in no time. depending on the subscription that you subscribe to in sure you will see in mere days, and if your not sure we also provide a 2 week 
+  free trial to try out our website if you like it or not. We hope you join us in our journey. </p>
+    </div>
+  </div>
+  <div class="rightcolumn" id="Subscriptions">
+    <div class="card">
+      <h3>Subscriptions</h3>
+      <h4 style="font-style: oblique;"><ul> Beginer subscription=100ETB
+        Learner subscription=200ETB
+        Master subscription=500ETB
+        Grandmaster subscription=750ETB
+        Legend subscription=1000ETB
+      </ul> 
+        
+
+      </h4>
+    </div>
+    <div class="card" id="Partners">
+      <h3>Partners</h3>
+      <img style="height:100px; width: 250px;" src="1.jpg" alt="">
+      <img style="height:100px; width:250px;" src="2.png" alt="">
+      <img style="height:100px; width:250px;" src="3.png" alt="">
+      
+    </div>
+    <div class="card" id="media">
+      <h3>Follow Me</h3>
+      <p style="font-style: initial; size: 32;"><a href="https://www.instagram.com/_prince_._leul/">Instagram </a></p>
+      <p><a href="https://x.com/Ben_dover895/">Twitter </a></p>
+      <p><a href="https://www.tiktok.com/@prince_leul3">Tiktok </a></p>
+      <p><a href="https://www.youtube.com/channel/UCeLrEvUYoM4uc3hQ7d80p3w">Youtube </a></p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>All rights reserved @ 2024 academic arena</h2>
+</div>
+
+</body>
+</html>
+
+
